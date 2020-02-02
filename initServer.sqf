@@ -2,6 +2,7 @@
  *	You can change MissionDate to some specific date to override date set in mission editor:
  *		format:		[@Year, @Month, @Day, @Hours, @Minutes] (e.g. [2012, 12, 31, 12, 45])
  */
+private _fnc_getRandomHrs = { private _hrs = (_this # 0) + round(random (_this # 1)); if (_hrs  >= 24) then { _hrs = _hrs - 24; }; _hrs };
 MissionDate = [
 	date select 0
 	, date select 1
@@ -39,3 +40,6 @@ PlayerConnectedEH = addMissionEventHandler ["PlayerConnected", {
 	PlayerConnectedData pushBack _this;
 	publicVariable "PlayerConnectedData";
 }];
+/*
+ *	Mission custom server code goes here:
+ */

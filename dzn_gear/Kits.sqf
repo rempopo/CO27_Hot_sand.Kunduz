@@ -51,7 +51,6 @@
 // ****************
 
 //US soldier
-
 #define us_u ["CUP_U_CRYE_V1_Full","CUP_U_CRYE_V1_Roll","CUP_U_CRYE_V2_Full","CUP_U_CRYE_V2_Roll","CUP_U_CRYE_V3_Full","CUP_U_CRYE_V3_Roll","CUP_U_CRYEG3_V1"]
 #define us_v ["rhsusf_spcs_ocp_teamleader","rhsusf_spcs_ocp_teamleader_alt","rhsusf_spcs_ocp_squadleader","rhsusf_spcs_ocp_rifleman","rhsusf_spcs_ocp_rifleman_alt"]
 #define us_h ["rhsusf_opscore_ut_pelt","rhsusf_opscore_ut_pelt_nsw_cam","rhsusf_opscore_paint_pelt_nsw","rhsusf_opscore_paint_pelt_nsw_cam","rhsusf_opscore_mar_ut_pelt","rhsusf_opscore_fg_pelt_nsw","rhsusf_opscore_paint_pelt"]
@@ -75,8 +74,8 @@ kit_us_sl = [
 	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_l],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_l]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
 	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7]]],
 	["<BACKPACK ITEMS >> ",[["SmokeShellGreen",2],["SmokeShellRed",2],["SmokeShell",2]]]
 ];
@@ -122,7 +121,7 @@ kit_us_r = [
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7]]],
-	["<BACKPACK ITEMS >> ",[["ACE_DefusalKit",1],["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",1]]]
+	["<BACKPACK ITEMS >> ",[["ACE_DefusalKit",1],["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",2]]]
 ];
 
 kit_us_mg = [

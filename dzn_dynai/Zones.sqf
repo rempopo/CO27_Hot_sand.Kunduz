@@ -8,26 +8,36 @@
 	/* Groups: */
 	,[
 		[
+			1, /* Groups quantity */
+			/* Units */
+			[
+				["O_Soldier_F", [], "kit_ins_r"]
+				,["O_Soldier_F", [], "kit_ins_mg"]
+				,["O_Soldier_F", [], "kit_ins_at"]
+			]
+		]
+		,[
 			2, /* Groups quantity */
 			/* Units */
 			[
-				["O_Soldier_F", [], "kit_random_ins"]
-				,["O_Soldier_F", [], "kit_random_ins"]
-				,["O_Soldier_F", [], "kit_random_ins"]
+				["O_Soldier_F", [], "kit_ins_r"]
+				,["O_Soldier_F", [], "kit_ins_gr"]
 				,["O_Soldier_F", [], "kit_random_ins"]
 			]
 		]
 		,[
-			4, /* Groups quantity */
+			2, /* Groups quantity */
 			/* Units */
 			[
 				["O_Soldier_F", ["indoors"], "kit_random_ins"]
+				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
+				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
 				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
 			]
 		]
 	]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","SAFE","YELLOW","LINE"]
+	,["LIMITED","SAFE","YELLOW","WEDGE"]
 ]
 
 ,[
@@ -36,18 +46,35 @@
 	/* Groups: */
 	,[
 		[
-			3, /* Groups quantity */
+			1, /* Groups quantity */
 			/* Units */
 			[
-				["O_Soldier_F", [], "kit_random_ins"]
+				["O_Soldier_F", [], "kit_ins_r"]
+				,["O_Soldier_F", [], "kit_ins_mg"]
 				,["O_Soldier_F", [], "kit_random_ins"]
+			]
+		]
+		,[
+			1, /* Groups quantity */
+			/* Units */
+			[
+				["O_Soldier_F", [], "kit_ins_gr"]
+				,["O_Soldier_F", [], "kit_ins_r"]
 				,["O_Soldier_F", [], "kit_random_ins"]
-				,["O_Soldier_F", [], "kit_random_ins"]
+			]
+		]
+		,[
+			1, /* Groups quantity */
+			/* Units */
+			[
+				["O_Soldier_F", [], "kit_ins_at"]
+				,["O_Soldier_F", [], "kit_ins_r"]
+				,["O_Soldier_F", [], "kit_ins_r"]
 			]
 		]
 	]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","SAFE","YELLOW","LINE"]
+	,["LIMITED","SAFE","YELLOW","WEDGE"]
 ]
 
 ,[
@@ -59,16 +86,23 @@
 			1, /* Groups quantity */
 			/* Units */
 			[
-				["O_Soldier_F", [], "kit_random_ins"]
+				["O_Soldier_F", [], "kit_ins_r"]
+				,["O_Soldier_F", [], "kit_ins_mg"]
 				,["O_Soldier_F", [], "kit_random_ins"]
-				,["O_Soldier_F", [], "kit_random_ins"]
-				,["O_Soldier_F", [], "kit_random_ins"]
+			]
+		]
+		,[
+			1, /* Groups quantity */
+			/* Units */
+			[
+				["O_Soldier_F", [], "kit_ins_gr"]
+				,["O_Soldier_F", [], "kit_ins_r"]
 				,["O_Soldier_F", [], "kit_random_ins"]
 			]
 		]
 	]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","SAFE","YELLOW","LINE"]
+	,["LIMITED","SAFE","YELLOW","WEDGE"]
 ]
 
 ,[
@@ -77,22 +111,36 @@
 	/* Groups: */
 	,[
 		[
-			3, /* Groups quantity */
+			2, /* Groups quantity */
 			/* Units */
 			[
-				["O_Soldier_F", [], "kit_random_ins"]
-				,["O_Soldier_F", [], "kit_random_ins"]
+				["O_Soldier_F", [], "kit_ins_r"]
+				,["O_Soldier_F", [], "kit_ins_mg"]
 				,["O_Soldier_F", [], "kit_random_ins"]
 			]
 		]
 		,[
-			10, /* Groups quantity */
+			1, /* Groups quantity */
+			/* Units */
+			[
+				["O_Soldier_F", [], "kit_ins_gr"]
+				,["O_Soldier_F", [], "kit_ins_r"]
+				,["O_Soldier_F", [], "kit_random_ins"]
+			]
+		]
+		,[
+			2, /* Groups quantity */
 			/* Units */
 			[
 				["O_Soldier_F", ["indoors"], "kit_random_ins"]
+				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
+				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
+				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
+				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
+				,["O_Soldier_F", ["indoors"], "kit_random_ins"]
 			]
 		]
 	]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","SAFE","YELLOW","LINE"]
+	,["LIMITED","SAFE","YELLOW","WEDGE"]
 ]
