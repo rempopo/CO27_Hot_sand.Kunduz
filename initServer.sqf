@@ -25,7 +25,12 @@ setDate MissionDate;
  *	Weather
  */
 if (!isNil "dzn_fnc_setWeather") then {
-	("par_weather" call BIS_fnc_getParamValue) spawn dzn_fnc_setWeather;
+	private _wthr = ("par_weather" call BIS_fnc_getParamValue);
+	if (_wthr == 0) then {
+		(selectRandom [1,2,3]) spawn dzn_fnc_setWeather;
+	} else {
+		_wthr spawn dzn_fnc_setWeather;
+	};
 };
 
 
