@@ -4,9 +4,9 @@
 <img src='{https://github.com/rempopo/CO29_Hot_sand.Kunduz/blob/master/overview.jpg?raw=true}' />	
 
 ### Version: 1B
-Обновлен Framework.
 Изменен брифинг.
-Изменены Зоны.
+Изменен отряд огневой поддержки.
+Добавлены слоты.
 
 
 # NOT APPROVED
