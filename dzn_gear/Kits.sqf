@@ -41,7 +41,7 @@
 
 // ******** ASSIGNED and UNIFORM ITEMS MACRO ********
 #define NVG_NIGHT_ITEM		if (daytime < 9 || daytime > 18) then { "NVGoggles_OPFOR" } else { "" }
-#define BINOCULAR_ITEM		"Binocular"
+#define BINOCULAR_ITEM		"Rangefinder"
 
 #define ASSIGNED_ITEMS		"ItemMap","ItemCompass","ItemWatch","ItemRadio", NVG_NIGHT_ITEM
 #define ASSIGNED_ITEMS_L	"ItemMap","ItemCompass","ItemWatch","ItemRadio", NVG_NIGHT_ITEM, BINOCULAR_ITEM
@@ -56,8 +56,8 @@
 #define us_h ["rhsusf_opscore_ut_pelt","rhsusf_opscore_ut_pelt_nsw_cam","rhsusf_opscore_paint_pelt_nsw","rhsusf_opscore_paint_pelt_nsw_cam","rhsusf_opscore_mar_ut_pelt","rhsusf_opscore_fg_pelt_nsw","rhsusf_opscore_paint_pelt"]
 #define us_g ["rhsusf_oakley_goggles_clr","rhs_googles_clear","CUP_G_ESS_CBR_Dark","CUP_G_Oakleys_Clr","CUP_G_Oakleys_Drk","CUP_G_Oakleys_Embr"]
 
-#define us_w_r ["rhs_weap_m4a1_d_mstock_grip2","rhs_weap_m4a1_mstock","rhs_weap_m4a1_blockII_KAC","rhs_weap_m4a1_blockII_d","rhs_weap_mk18","rhs_weap_mk18_d","rhs_weap_mk18_KAC_d","rhs_weap_hk416d145_d","rhs_weap_mk17_CQC"]
-#define us_a_r ["rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_20Rnd_SCAR_762x51_m80_ball"]
+#define us_w_r ["rhs_weap_m4a1_d_mstock_grip2","rhs_weap_m4a1_mstock","rhs_weap_m4a1_blockII_KAC","rhs_weap_m4a1_blockII_d","rhs_weap_mk18","rhs_weap_mk18_d","rhs_weap_mk18_KAC_d","rhs_weap_hk416d145_d","rhs_weap_mk17_CQC","rhs_weap_hk416d145_grip3"]
+#define us_a_r ["rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_20Rnd_SCAR_762x51_m80_ball","rhs_mag_30Rnd_556x45_M855_PMAG"]
 
 #define us_w_o ["rhsusf_acc_ACOG_USMC","rhsusf_acc_ACOG_RMR","rhsusf_acc_su230","rhsusf_acc_su230a_mrds"]
 #define us_w_h ["rhsusf_acc_grip2","rhsusf_acc_grip3","rhsusf_acc_kac_grip","rhsusf_acc_rvg_blk","rhsusf_acc_tdstubby_blk",""]
@@ -68,6 +68,17 @@
 
 #define us_w_gr ["rhs_weap_m4a1_m203s_d","rhs_weap_m4a1_blockII_M203_d","rhs_weap_m4a1_blockII_M203","rhs_weap_mk18_m320","rhs_weap_m4a1_m320","rhs_weap_m4a1_carryhandle_m203"]
 #define us_a_gr ["rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG"]
+
+kit_111_pl = [
+	["<EQUIPEMENT >>  ","CUP_U_CRYE_V3_Full","rhsusf_spcs_ocp_teamleader","","rhsusf_opscore_paint_pelt_nsw","rhs_googles_clear"],
+	["<PRIMARY WEAPON >>  ","rhs_weap_hk416d145_grip3","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","","rhsusf_acc_su230","rhsusf_acc_grip3"]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["rhs_mag_m18_green",1],["rhs_mag_m18_yellow",1],["rhs_mag_m18_red",1]]],
+	["<BACKPACK ITEMS >> ",[]]
+];
 
 kit_us_sl = [
 	["<EQUIPEMENT >>  ",us_u,us_v,"tf_rt1523g",us_h,us_g],
@@ -85,7 +96,7 @@ kit_us_ftl = [
 	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7],["rhs_mag_m18_green",1],["rhs_mag_m18_yellow",1],["rhs_mag_m18_red",1]]],
 	["<BACKPACK ITEMS >> ",[]]
@@ -126,7 +137,7 @@ kit_us_r = [
 
 kit_us_mg = [
 	["<EQUIPEMENT >>  ",us_u,"rhsusf_spcs_ocp_machinegunner","rhsusf_assault_eagleaiii_ocp",us_h,us_g],
-	["<PRIMARY WEAPON >>   ","CUP_lmg_M240","rhsusf_100Rnd_762x51",["","","rhsusf_acc_ACOG_MDO",""]],
+	["<PRIMARY WEAPON >>   ","rhs_weap_m240B","rhsusf_100Rnd_762x51",["","","rhsusf_acc_ACOG_MDO",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
@@ -138,7 +149,7 @@ kit_us_mg = [
 kit_us_am = [
 	["<EQUIPEMENT >>  ",us_u,us_v,"rhsusf_assault_eagleaiii_ocp",us_h,us_g],
 	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
-	["<LAUNCHER WEAPON >>  ","dzn_MG_Tripod_M122A1_M240Mount_Carry","",["","","",""]],
+	["<LAUNCHER WEAPON >>  ","dzn_MG_Tripod_M122A1_M240Mount_RHS_Carry","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
@@ -146,7 +157,9 @@ kit_us_am = [
 	["<BACKPACK ITEMS >> ",[["rhsusf_100Rnd_762x51",2]]]
 ];
 
-kit_us_aat = [
+
+
+kit_us_at = [
 	["<EQUIPEMENT >>  ",us_u,us_v,"rhsusf_assault_eagleaiii_ocp",us_h,us_g],
 	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
 	["<LAUNCHER WEAPON >>  ","rhs_weap_maaws","rhs_mag_maaws_HE",["","","rhs_optic_maaws",""]],
@@ -157,12 +170,23 @@ kit_us_aat = [
 	["<BACKPACK ITEMS >> ",[["ACE_DefusalKit",1],["rhs_mag_maaws_HEAT",1]]]
 ];
 
+kit_us_aat = [
+	["<EQUIPEMENT >>  ",us_u,us_v,"rhsusf_assault_eagleaiii_ocp",us_h,us_g],
+	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7]]],
+	["<BACKPACK ITEMS >> ",[["rhs_mag_maaws_HEAT",1],["rhs_mag_maaws_HE",1]]]
+];
+
 kit_us_mm = [
 	["<EQUIPEMENT >>  ",us_u,us_v,"rhsusf_spcs_ocp_sniper",us_h,""],
 	["<PRIMARY WEAPON >>  ","rhs_weap_sr25_d","rhsusf_20Rnd_762x51_SR25_m118_special_Mag",["","","rhsusf_acc_M8541_mrds","rhsusf_acc_harris_bipod"]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",6]]],
 	["<BACKPACK ITEMS >> ",[]]
@@ -170,7 +194,7 @@ kit_us_mm = [
 
 cargo_kit_us_us = [
 	[["rhs_weap_M136",1]],
-	[["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",10],["rhs_mag_30Rnd_556x45_M855_PMAG",10],["rhs_mag_30Rnd_556x45_M855_Stanag_Pull",10],["HandGrenade",6],["CUP_PipeBomb_M",2]],
+	[["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",10],["rhs_mag_30Rnd_556x45_M855_PMAG",10],["rhs_mag_30Rnd_556x45_M855_Stanag_Pull",10],["rhs_mag_20Rnd_SCAR_762x51_m80_ball",6],["HandGrenade",6],["CUP_PipeBomb_M",2]],
 	[["ACE_DefusalKit",4],["ACE_Clacker",2]],
 	[]
 ];
@@ -178,8 +202,8 @@ cargo_kit_us_us = [
 cargo_kit_us_weapon = [
 	[["rhs_weap_M136",2]],
 	[["rhsusf_100Rnd_762x51",8],["rhs_mag_30Rnd_556x45_M855_PMAG",10],["HandGrenade",6],["rhs_mag_maaws_HE",3],["rhs_mag_maaws_HEAT",3],["rhs_mag_30Rnd_556x45_M855_Stanag_Pull",10],["rhsusf_mag_17Rnd_9x19_FMJ",7],["rhsusf_20Rnd_762x51_SR25_m118_special_Mag",5]],
-	[["ACE_DefusalKit",4]],
-	[["rhs_M252_Bipod_Bag",1],["rhs_M252_Gun_Bag",1]]
+	[["ACE_DefusalKit",4],["B_UavTerminal",1]],
+	[["rhs_M252_Bipod_Bag",1],["rhs_M252_Gun_Bag",1],["B_UAV_01_backpack_F",1]]
 ];
 
 //enemy
