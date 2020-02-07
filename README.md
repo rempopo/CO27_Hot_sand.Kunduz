@@ -3,10 +3,7 @@
 
 <img src='https://raw.githubusercontent.com/rempopo/CO29_Hot_sand.Kunduz/master/overview.jpg' />	
 
-### Version: 1B
-Изменен брифинг.
-Изменен отряд огневой поддержки.
-Добавлены слоты.
+### Version: 1A
 
 
 # NOT APPROVED
