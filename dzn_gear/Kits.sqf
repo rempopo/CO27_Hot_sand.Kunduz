@@ -69,17 +69,6 @@
 #define us_w_gr ["rhs_weap_m4a1_m203s_d","rhs_weap_m4a1_blockII_M203_d","rhs_weap_m4a1_blockII_M203","rhs_weap_mk18_m320","rhs_weap_m4a1_m320","rhs_weap_m4a1_carryhandle_m203"]
 #define us_a_gr ["rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG","rhs_mag_30Rnd_556x45_M855_PMAG"]
 
-kit_111_pl = [
-	["<EQUIPEMENT >>  ","CUP_U_CRYE_V3_Full","rhsusf_spcs_ocp_teamleader","","rhsusf_opscore_paint_pelt_nsw","rhs_googles_clear"],
-	["<PRIMARY WEAPON >>  ","rhs_weap_hk416d145_grip3","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","","rhsusf_acc_su230","rhsusf_acc_grip3"]],
-	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["rhs_mag_m18_green",1],["rhs_mag_m18_yellow",1],["rhs_mag_m18_red",1]]],
-	["<BACKPACK ITEMS >> ",[]]
-];
-
 kit_us_sl = [
 	["<EQUIPEMENT >>  ",us_u,us_v,"tf_rt1523g",us_h,us_g],
 	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
