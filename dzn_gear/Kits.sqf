@@ -41,7 +41,7 @@
 
 // ******** ASSIGNED and UNIFORM ITEMS MACRO ********
 #define NVG_NIGHT_ITEM		if (daytime < 9 || daytime > 18) then { "NVGoggles_OPFOR" } else { "" }
-#define BINOCULAR_ITEM		"Rangefinder"
+#define BINOCULAR_ITEM		"ACE_Vector"
 
 #define ASSIGNED_ITEMS		"ItemMap","ItemCompass","ItemWatch","ItemRadio", NVG_NIGHT_ITEM
 #define ASSIGNED_ITEMS_L	"ItemMap","ItemCompass","ItemWatch","ItemRadio", NVG_NIGHT_ITEM, BINOCULAR_ITEM
@@ -61,7 +61,7 @@
 
 #define us_w_o ["rhsusf_acc_ACOG_USMC","rhsusf_acc_ACOG_RMR","rhsusf_acc_su230","rhsusf_acc_su230a_mrds"]
 #define us_w_h ["rhsusf_acc_grip2","rhsusf_acc_grip3","rhsusf_acc_kac_grip","rhsusf_acc_rvg_blk","rhsusf_acc_tdstubby_blk",""]
-#define us_w_l ["rhsusf_acc_anpeq15","rhsusf_acc_anpeq16a_top","rhsusf_acc_anpeq15_bk_top","rhsusf_acc_anpeq16a","rhsusf_acc_anpeq15_wmx",""]
+#define us_w_l ["rhsusf_acc_anpeq15","rhsusf_acc_anpeq16a_top","rhsusf_acc_anpeq15_bk_top","rhsusf_acc_anpeq16a","rhsusf_acc_anpeq15_wmx"]
 
 #define us_w_ar ["rhs_weap_m249_pip_L_para","rhs_weap_m249_light_L","rhs_weap_m249_light_S","rhs_weap_m249_pip_S_para"]
 #define us_a_ar ["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote","rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote","rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote","rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote"]
