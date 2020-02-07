@@ -53,17 +53,15 @@ MissionCondition1 = [ "WIN", {
 	&& !alive TRG_2
 	&& {call fnc_CheckPlayersReturned} 
 }, "2 TRG destroyed" ];
-
-MissionCondition2 = [ "WIPPED2", {
-	alive TRG_1
-	&& !alive TRG_2
-	&& {call fnc_CheckPlayersReturned} 
-}, "1 AA alive, wepon destroyed" ];
-
-MissionCondition3 = [ "WIN2", {
+MissionCondition2 = [ "WIN_AA", {
 	!alive TRG_1
 	&& alive TRG_2
 	&& {call fnc_CheckPlayersReturned} 
-}, "1 AA destroyed, wepon alive" ];
+}, "1 AA destroyed, cache alive" ];
+MissionCondition3 = [ "FAIL_AA", {
+	alive TRG_1
+	&& !alive TRG_2
+	&& {call fnc_CheckPlayersReturned} 
+}, "1 AA alive, cache destroyed" ];
 
 MissionCondition4 = [ "WIPPED", { call fnc_isAllDead }, "All dead", 30 ];

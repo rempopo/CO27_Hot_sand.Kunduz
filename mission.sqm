@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1086;
+		nextID=1089;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=281;
+		nextID=300;
 	};
 	class Camera
 	{
-		pos[]={1485.4633,687.03119,174.84241};
-		dir[]={0.18660095,-0.44011846,0.87847573};
-		up[]={0.091460653,0.89786279,0.43056777};
-		aside[]={0.97827786,3.1315722e-007,-0.20780401};
+		pos[]={0,25,-25};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -137,7 +137,7 @@ class AddonsMetaData
 		{
 			className="ace_csw";
 			name="ACE3 - Crew-Served Weapons";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item11
@@ -199,7 +199,7 @@ class AddonsMetaData
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item21
@@ -268,7 +268,7 @@ class AddonsMetaData
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item32
@@ -334,6 +334,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -379,25 +398,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
 				};
 			};
 		};
@@ -454,7 +454,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=165;
+		items=168;
 		class Item0
 		{
 			dataType="Marker";
@@ -9597,27 +9597,72 @@ class Mission
 		class Item164
 		{
 			dataType="Trigger";
-			position[]={4234.3491,3.4960351,1385.368};
+			position[]={3993.4009,4.8026857,683.0603};
 			class Attributes
 			{
 				condition="call{this}";
-				sizeA=1035.028;
-				sizeB=757.63702;
+				sizeA=150;
+				sizeB=450;
+				isRectangle=1;
 			};
 			id=1085;
 			type="EmptyDetectorAreaR250";
-			atlOffset=-2.474;
+		};
+		class Item165
+		{
+			dataType="Trigger";
+			position[]={4881.7476,7.3730421,1500.4492};
+			angle=2.8084259;
+			class Attributes
+			{
+				condition="call{this}";
+				sizeA=200;
+				sizeB=750;
+				isRectangle=1;
+			};
+			id=1086;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item166
+		{
+			dataType="Trigger";
+			position[]={4529.7319,4.8225026,444.39728};
+			angle=3.8382111;
+			class Attributes
+			{
+				condition="call{this}";
+				sizeA=150;
+				sizeB=450;
+				isRectangle=1;
+			};
+			id=1087;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item167
+		{
+			dataType="Trigger";
+			position[]={4866.9893,5.8350949,1492.2815};
+			angle=2.8084259;
+			class Attributes
+			{
+				condition="call{this}";
+				sizeA=200;
+				sizeB=750;
+				isRectangle=1;
+			};
+			id=1088;
+			type="EmptyDetectorAreaR250";
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=67;
+			nextID=70;
 		};
 		class Links
 		{
-			items=67;
+			items=70;
 			class Item0
 			{
 				linkID=0;
@@ -10283,6 +10328,36 @@ class Mission
 				linkID=66;
 				item0=1022;
 				item1=1085;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item67
+			{
+				linkID=67;
+				item0=1086;
+				item1=1022;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item68
+			{
+				linkID=68;
+				item0=1088;
+				item1=1046;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item69
+			{
+				linkID=69;
+				item0=1087;
+				item1=1046;
 				class CustomData
 				{
 					type="Sync";

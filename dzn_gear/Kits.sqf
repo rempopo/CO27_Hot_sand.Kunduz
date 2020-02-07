@@ -86,7 +86,7 @@ kit_us_ftl = [
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
 	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7],["rhs_mag_m18_green",1],["rhs_mag_m18_yellow",1],["rhs_mag_m18_red",1]]],
 	["<BACKPACK ITEMS >> ",[]]
 ];
@@ -124,6 +124,18 @@ kit_us_r = [
 	["<BACKPACK ITEMS >> ",[["ACE_DefusalKit",1],["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",2]]]
 ];
 
+
+kit_us_ftl_mg = [
+	["<EQUIPEMENT >>  ",us_u,us_v,"rhsusf_assault_eagleaiii_ocp",us_h,us_g],
+	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
+	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7],["rhs_mag_m18_green",1],["rhs_mag_m18_yellow",1],["rhs_mag_m18_red",1]]],
+	["<BACKPACK ITEMS >> ",[["rhsusf_100Rnd_762x51",2]]]
+];
+
 kit_us_mg = [
 	["<EQUIPEMENT >>  ",us_u,"rhsusf_spcs_ocp_machinegunner","rhsusf_assault_eagleaiii_ocp",us_h,us_g],
 	["<PRIMARY WEAPON >>   ","rhs_weap_m240B","rhsusf_100Rnd_762x51",["","","rhsusf_acc_ACOG_MDO",""]],
@@ -146,7 +158,16 @@ kit_us_am = [
 	["<BACKPACK ITEMS >> ",[["rhsusf_100Rnd_762x51",2]]]
 ];
 
-
+kit_us_ftl_at = [
+	["<EQUIPEMENT >>  ",us_u,us_v,"rhsusf_assault_eagleaiii_ocp",us_h,us_g],
+	["<PRIMARY WEAPON >>  ",us_w_r,us_a_r,["",us_w_l,us_w_o,us_w_h]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhsusf_weap_glock17g4","rhsusf_mag_17Rnd_9x19_JHP",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
+	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7],["rhs_mag_m18_green",1],["rhs_mag_m18_yellow",1],["rhs_mag_m18_red",1]]],
+	["<BACKPACK ITEMS >> ",[["rhs_mag_maaws_HEAT",1],["rhs_mag_maaws_HE",1]]]
+];
 
 kit_us_at = [
 	["<EQUIPEMENT >>  ",us_u,us_v,"rhsusf_assault_eagleaiii_ocp",us_h,us_g],
@@ -156,7 +177,7 @@ kit_us_at = [
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["rhsusf_mag_17Rnd_9x19_FMJ",2],["HandGrenade",2],["PRIMARY MAG",7]]],
-	["<BACKPACK ITEMS >> ",[["ACE_DefusalKit",1],["rhs_mag_maaws_HEAT",1]]]
+	["<BACKPACK ITEMS >> ",[["rhs_mag_maaws_HEAT",2]]]
 ];
 
 kit_us_aat = [
@@ -182,15 +203,15 @@ kit_us_mm = [
 ];
 
 cargo_kit_us_us = [
-	[["rhs_weap_M136",1]],
-	[["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",10],["rhs_mag_30Rnd_556x45_M855_PMAG",10],["rhs_mag_30Rnd_556x45_M855_Stanag_Pull",10],["rhs_mag_20Rnd_SCAR_762x51_m80_ball",6],["HandGrenade",6],["CUP_PipeBomb_M",2]],
+	[["rhs_weap_M136",2]],
+	[["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch_coyote",10],["rhs_mag_30Rnd_556x45_M855_PMAG",16],["rhs_mag_30Rnd_556x45_M855_Stanag_Pull",16],["rhs_mag_20Rnd_SCAR_762x51_m80_ball",10],["HandGrenade",10],["CUP_PipeBomb_M",2]],
 	[["ACE_DefusalKit",4],["ACE_Clacker",2]],
 	[]
 ];
 
 cargo_kit_us_weapon = [
 	[["rhs_weap_M136",2]],
-	[["rhsusf_100Rnd_762x51",8],["rhs_mag_30Rnd_556x45_M855_PMAG",10],["HandGrenade",6],["rhs_mag_maaws_HE",3],["rhs_mag_maaws_HEAT",3],["rhs_mag_30Rnd_556x45_M855_Stanag_Pull",10],["rhsusf_mag_17Rnd_9x19_FMJ",7],["rhsusf_20Rnd_762x51_SR25_m118_special_Mag",5]],
+	[["rhsusf_100Rnd_762x51",12],["rhs_mag_30Rnd_556x45_M855_PMAG",10],["HandGrenade",6],["rhs_mag_maaws_HE",5],["rhs_mag_maaws_HEAT",5],["rhs_mag_30Rnd_556x45_M855_Stanag_Pull",10],["rhsusf_mag_17Rnd_9x19_FMJ",7],["rhsusf_20Rnd_762x51_SR25_m118_special_Mag",10]],
 	[["ACE_DefusalKit",4],["B_UavTerminal",1]],
 	[["rhs_M252_Bipod_Bag",1],["rhs_M252_Gun_Bag",1],["B_UAV_01_backpack_F",1]]
 ];
